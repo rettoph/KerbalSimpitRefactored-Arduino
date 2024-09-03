@@ -3,35 +3,33 @@ set ArduinoLibraryPath=%USERPROFILE%\Documents\Arduino\libraries
 echo Input Arduino Library Path. Default: "%ArduinoLibraryPath%"
 set /P "ArduinoLibraryPath="
 
-set KerbalSimpitRevampedArduinoTargetPath="%ArduinoLibraryPath%\KerbalSimpitRevamped-Arduino"
-set FunctionObjectsTargetPath="%ArduinoLibraryPath%\function_objects"
+set SimpitRefactoredArduinoTargetPath="%ArduinoLibraryPath%\SimpitRefactored-Arduino"
+set KerbalSimpitRefactoredArduinoTargetPath="%ArduinoLibraryPath%\KerbalSimpitRefactored-Arduino"
+
+CALL :NORMALIZEPATH "%~dp0\..\libraries\SimpitRefactored-Arduino"
+SET SimpitRefactoredArduinoSourcePath="%RETVAL%"
 
 CALL :NORMALIZEPATH "%~dp0\.."
-SET KerbalSimpitRevampedArduinoSourcePath="%RETVAL%"
+SET KerbalSimpitRefactoredArduinoSourcePath="%RETVAL%"
 
-CALL :NORMALIZEPATH "%~dp0\..\libraries\function_objects\include"
-SET FunctionObjectsSourcePath="%RETVAL%"
-
-if not exist %KerbalSimpitRevampedArduinoTargetPath% (
+if not exist %ArduinoLibraryPath% (
     echo Creating Arduino Library Directory at %ArduinoLibraryPath%
     mkdir %ArduinoLibraryPath%
 )
 
-if exist %KerbalSimpitRevampedArduinoTargetPath% (
-    echo Removing existing KerbalSimpitRevampedArduino instace at %KerbalSimpitRevampedArduinoTargetPath%
-    rmdir %KerbalSimpitRevampedArduinoTargetPath%
+if exist %SimpitRefactoredArduinoTargetPath% (
+    echo Removing existing SimpitRefactoredArduino instace at %SimpitRefactoredArduinoTargetPath%
+    rmdir %SimpitRefactoredArduinoTargetPath%
 )
 
-mklink /J %KerbalSimpitRevampedArduinoTargetPath% %KerbalSimpitRevampedArduinoSourcePath%
+mklink /J %SimpitRefactoredArduinoTargetPath% %SimpitRefactoredArduinoSourcePath%
 
-if exist %FunctionObjectsTargetPath% (
-    echo Removing existing function_objects instace at %FunctionObjectsTargetPath%
-    rmdir %FunctionObjectsTargetPath%
+if exist %KerbalSimpitRefactoredArduinoTargetPath% (
+    echo Removing existing SimpitRefactoredArduino instace at %KerbalSimpitRefactoredArduinoTargetPath%
+    rmdir %KerbalSimpitRefactoredArduinoTargetPath%
 )
 
-mklink /J %FunctionObjectsTargetPath% %FunctionObjectsSourcePath%
-
-
+mklink /J %KerbalSimpitRefactoredArduinoTargetPath% %KerbalSimpitRefactoredArduinoSourcePath%
 
 GOTO :END
 echo Warning: Running function code

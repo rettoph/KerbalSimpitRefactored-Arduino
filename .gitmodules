@@ -1,12 +1,3 @@
-[submodule "libraries/AUnit"]
-	path = libraries/AUnit
-	url = https://github.com/bxparks/AUnit
-[submodule "libraries/EpoxyDuino"]
-	path = libraries/EpoxyDuino
-	url = https://github.com/bxparks/EpoxyDuino
-[submodule "libraries/MemStream"]
-	path = libraries/MemStream
-	url = https://github.com/rettoph/MemStream
-[submodule "libraries/function_objects"]
-	path = libraries/function_objects
-	url = https://github.com/fopeczek/function_objects
+[submodule "libraries/SimpitRefactored-Arduino"]
+	path = libraries/SimpitRefactored-Arduino
+	url = https://github.com/rettoph/SimpitRefactored-Arduino

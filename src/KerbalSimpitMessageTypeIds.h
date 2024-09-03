@@ -72,8 +72,8 @@ public:
         static const byte BurnTime = 40;
         static const byte CustomActionGroups = 41;
         static const byte TempLimit = 42;
-        static const byte AdvancedActionGroups = 56; // Appears to be unused in KerbalSimpitRevamped
-        static const byte AdvancedCustomActionGroups = 57;  // Appears to be unused in KerbalSimpitRevamped
+        static const byte AdvancedActionGroups = 56; // Appears to be unused in KerbalSimpitRefactored
+        static const byte AdvancedCustomActionGroups = 57;  // Appears to be unused in KerbalSimpitRefactored
         //#endregion
 
         //#region External Environment

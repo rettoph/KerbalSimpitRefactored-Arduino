@@ -123,7 +123,7 @@ Going further
 The examples_ directory of the library contains several example sketches
 that demonstrate the different functionality of the library.
 
-.. _examples: https://github.com/Simpit-team/KerbalSimpitRevamped-Arduino/tree/main/examples
+.. _examples: https://github.com/Simpit-team/KerbalSimpitRefactored-Arduino/tree/main/examples
 
 When you first install Simpit, you have to modify the *Settings.cfg* file that is found in the *GameData\KerbalSimpit* folder.
 You can copy the provided ``Settings.cfg.sample`` as a baseline, and you must at least define the port name to use. More information in :any:`troubleshooting`.
