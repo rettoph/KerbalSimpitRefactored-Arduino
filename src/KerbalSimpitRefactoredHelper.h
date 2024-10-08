@@ -1,8 +1,8 @@
 #ifndef KerbalSimpitHelper_h
 #define KerbalSimpitHelper_h
 
-#include "Simpit.h"
-#include "KerbalSimpitMessageTypes.h"
+#include "SimpitRefactored.h"
+#include "KerbalSimpitRefactoredMessageTypes.h"
 
 class KerbalSimpitHelper
 {

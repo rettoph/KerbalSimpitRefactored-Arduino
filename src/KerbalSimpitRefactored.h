@@ -1,9 +1,9 @@
 #ifndef KerbalSimpit_h
 #define KerbalSimpit_h
 
-#include "KerbalSimpitMessageTypeIds.h"
-#include "KerbalSimpitMessageTypes.h"
-#include "SimpitMacros.h"
+#include "KerbalSimpitRefactoredMessageTypeIds.h"
+#include "KerbalSimpitRefactoredMessageTypes.h"
+#include "SimpitRefactoredMacros.h"
 
 // Propulsion Resources
 SIMPIT_DECLARE_INCOMING_TYPE(Resource::Incoming::LiquidFuel, MessageTypeIds::Incoming::LiquidFuel);

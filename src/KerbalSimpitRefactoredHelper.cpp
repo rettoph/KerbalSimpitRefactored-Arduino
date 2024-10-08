@@ -1,6 +1,6 @@
-#include "KerbalSimpitHelper.h"
+#include "KerbalSimpitRefactoredHelper.h"
 
-#include "KerbalSimpitMessageTypes.h"
+#include "KerbalSimpitRefactoredMessageTypes.h"
 
 Simpit* KerbalSimpitHelper::_simpit = nullptr;
 
